@@ -1,0 +1,48 @@
+<!-- html setup -->
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Basketball Scoreboard</title>
+         </head>
+            <body>
+
+<!-- Interface -->                
+<div id="main">
+    <div id="main-interface">
+
+<!-- First team - Home (left) -->
+<div class="first-team">
+    <h1>HOME</h1>
+        <div id='homeScore'></div>
+            <div class='addedPoints'>
+                <button id='homePlusOne'>+1</button>
+                <button id='homePlusTwo'>+2</button>
+                <button id='homePlusThree'>+3</button>
+            </div> <!-- closing homePlus div -->
+            </div> <!-- closing first-team div-->
+            
+<!-- Second team - Guest (right) -->
+<div class="second-team">
+<h1>GUEST</h1>
+<div id='guestScore'></div>
+<!-- Guest plus 1, 2, 3 buttons -->
+<div class='addedPoints'>
+    <button id='guestPlusOne'>+1</button>
+    <button id='guestPlusTwo'>+2</button>
+    <button id='guestPlusThree'>+3</button>
+</div> <!-- closing guestPlus 1,2,3 div -->
+</div> <!-- closing second-team div -->
+</div> <!-- closing main-interface div -->
+
+<!-- Reset Button -->
+
+<!-- Formatting and styling -->
+<div style="text-align: center; padding: 20px"><div>
+    <button id="reset"style=" font-size: 1.5em; padding: 5px 10px; border-radius: 20px; background-color: #090001; color: #f94f6d;">Reset</button>
+</div>
+</div> <!-- closing main div -->
+
+
+<script src="index.js"></script>
+</body>
+</html>

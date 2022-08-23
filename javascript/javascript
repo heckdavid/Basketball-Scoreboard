@@ -1,0 +1,78 @@
+// Set the score 
+
+const homeScoreEl = document.getElementById('homeScore')
+const guestScoreEl = document.getElementById('guestScore')
+const reset = document.getElementById('reset')
+let homeScore = 0
+let guestScore = 0
+homeScoreEl.innerText = homeScore
+guestScoreEl.innerText = guestScore
+
+
+const homePlusOne = document.getElementById('homePlusOne')
+const homePlusTwo = document.getElementById('homePlusTwo')
+const homePlusThree = document.getElementById('homePlusThree')
+const guestPlusOne = document.getElementById('guestPlusOne')
+const guestPlusTwo = document.getElementById('guestPlusTwo')
+const guestPlusThree = document.getElementById('guestPlusThree')
+
+
+// Functions
+// Home functions
+
+function  homeAddOne() {
+homeScore = homeScore + 1
+homeScoreEl.innerText = homeScore
+}
+
+function  homeAddTwo() {
+homeScore = homeScore + 2
+homeScoreEl.innerText = homeScore
+}
+
+function  homeAddThree() {
+homeScore = homeScore + 3
+homeScoreEl.innerText = homeScore
+}
+
+// Guest functions
+
+function  guestAddOne() {
+guestScore = guestScore + 1
+guestScoreEl.innerText = guestScore
+}
+
+function  guestAddTwo() {
+guestScore = guestScore + 2
+guestScoreEl.innerText = guestScore
+}
+
+function  guestAddThree() {
+guestScore = guestScore + 3
+guestScoreEl.innerText = guestScore
+}
+
+// Reset button
+
+function newGame() {
+homeScore = 0
+guestScore = 0
+homeScoreEl.innerText = homeScore
+guestScoreEl.innerText = guestScore
+}
+
+// Event Listeners
+// Home Event Listeners
+
+homePlusOne.addEventListener('click', homeAddOne)
+homePlusTwo.addEventListener('click', homeAddTwo)
+homePlusThree.addEventListener('click', homeAddThree)
+
+// Guest Event Listeners
+
+guestPlusOne.addEventListener('click', guestAddOne)
+guestPlusTwo.addEventListener('click', guestAddTwo)
+guestPlusThree.addEventListener('click', guestAddThree)
+
+// Reset game
+reset.addEventListener('click', newGame)
