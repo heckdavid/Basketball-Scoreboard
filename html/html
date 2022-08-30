@@ -1,51 +1,47 @@
 <!-- html setup -->
+<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
         <title>Basketball Scoreboard</title>
-         </head>
-            <body>
-
-<!-- Interface -->                
-<div id="main">
-    <div id="main-interface">
+    </head>
+    <body>
 
 <!-- First team - Home (left) -->
-<div class="first-team">
+<div class="main">
+    <div>
     <h1>HOME</h1>
-        <div id='homeScore'></div>
-            <div class='addedPoints'>
-                <button id='homePlusOne'>+1</button>
-                <button id='homePlusTwo'>+2</button>
-                <button id='homePlusThree'>+3</button>
-            </div> <!-- closing homePlus div -->
-            </div> <!-- closing first-team div-->
-            
+        <h2> id='homeScore'>0<h2>
+            <div>
+                <button onclick='homePlusOne()'>+1</button>
+                <button onclick='homePlusTwo()'>+2</button>
+                <button onclick='homePlusThree()'>+3</button>
+            </div> <!-- Closing HOME team +1,2,3 buttons-->
+        </div> <!-- closing HOME team div-->
 <!-- Second team - Guest (right) -->
-<div class="second-team">
-<h1>GUEST</h1>
-<div id='guestScore'></div>
+<div>
+    <h1>GUEST</h1>
+    <h2 id='guestScore'>0</h2>
 <!-- Guest plus 1, 2, 3 buttons -->
-<div class='addedPoints'>
-    <button id='guestPlusOne'>+1</button>
-    <button id='guestPlusTwo'>+2</button>
-    <button id='guestPlusThree'>+3</button>
-</div> <!-- closing guestPlus 1,2,3 div -->
-</div> <!-- closing second-team div -->
-</div> <!-- closing main-interface div -->
+    <div>
+        <button onclick='guestPlusOne()'>+1</button>
+        <button onclick='guestPlusTwo()'>+2</button>
+        <button onclick='guestPlusThree()'>+3</button>
+    </div> <!-- closing GUEST team +1,2,3 buttons -->
+</div> <!-- closing "main" div-->
 
 <!-- Reset Button -->
 
 <!-- Formatting and styling -->
 <div style="text-align: center; padding: 20px"><div>
-    <button id="reset"style=" font-size: 1.5em; padding: 5px 10px; border-radius: 20px; background-color: #090001; color: #f94f6d;">Reset</button>
-</div>
+        <button id="reset"style=" font-size: 1.5em; padding: 5px 10px; border-radius: 20px; background-color: #090001; color: #f94f6d;">Reset</button>
+    </div>
 </div> <!-- closing main div -->
 
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
